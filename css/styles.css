@@ -1,0 +1,235 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1 .harry{
+    font-family: 'Harry Potter', sans-serif;
+}
+
+body {
+	background: #f3f3f3;
+	font-family: 'Inter', sans-serif;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
+    border-bottom: 1px solid #f1f1f1;
+  }  
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+  
+.dropdown {
+    margin-right: 10px; /* Espaciado entre el desplegable y el siguiente elemento */
+}
+  
+label {
+    display: none; /* Ocultar la etiqueta*/
+}
+  
+select {
+    padding: 5px;
+    font-size: 16px;
+}
+  
+.text-section {
+    text-align: center;
+    flex-grow: 1; /* Para que ocupe el espacio restante y empuje los logos a la derecha */
+}
+  
+.text-section p {
+    margin: 0;
+    font-size: 16px;
+}
+  
+  .social-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .social-section i {
+    margin-left: 10px; /* Espaciado entre los enlaces de redes sociales */
+  }
+  
+  .social-section img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .separator {
+    height: 50px; /* Altura de la separación */
+    background-color: #ddd; /* Color de la separación */
+  }
+
+  .logo-buscador-user {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid #000000;
+  }
+  
+  .logo-buscador-user h1 {
+    margin: 0;
+  }
+  
+  .buscador {
+    flex-grow: 1;
+    margin: 0 20px; /* Espaciado entre el título y la barra de búsqueda */
+  }
+  
+  .buscador input {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #333; /* Línea inferior de la barra de búsqueda */
+    outline: none;
+  }
+  
+  .buscador a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .logos-user {
+    display: flex;
+  }
+  
+  .logos-user a {
+    margin-right: 10px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+
+  .main-nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+  }
+  
+  .main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .main-nav li {
+    margin: 0 15px;
+  }
+  
+  .main-nav a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    padding: 10px;
+    min-width: 200px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .category {
+    flex-basis: calc(25% - 20px);
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Alinear elementos verticalmente */
+  }
+  
+  .category a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .category p {
+    margin: 0;
+  }
+  
+  .category img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: flex;
+  }
+
+  .banner {
+    margin: 20px 0;
+    align-content: center;
+  }
+  
+  .venta {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+  }
+  
+  .abrigos {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .abrigos img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .rating {
+    /* Puedes agregar estilos para el ícono de la puntuación aquí */
+  }
+  footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .footer-section {
+    display: inline-block;
+    margin: 0 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-line {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+  }
+  
+  h3 {
+    font-size: 14px;
+  }
