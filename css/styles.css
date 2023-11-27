@@ -14,7 +14,7 @@ body {
 	font-family: 'Inter', sans-serif;
 }
 header {
-    position: fixed;
+    position: sticky; /*Aquesta capçalera ha de ser “sticky”.*/
     top: 0;
     width: 100%;
     z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
@@ -60,18 +60,9 @@ select {
   .social-section i {
     margin-left: 10px; /* Espaciado entre los enlaces de redes sociales */
   }
-  
-  .social-section img {
-    width: 30px;
-    height: 30px;
-  }
-
-  .separator {
-    height: 50px; /* Altura de la separación */
-    background-color: #ddd; /* Color de la separación */
-  }
 
   .logo-buscador-user {
+    background-color: #f1f1f1;
     display: flex;
     align-items: center;
     padding: 20px;
@@ -125,6 +116,7 @@ select {
   
   .main-nav li {
     margin: 0 15px;
+    
   }
   
   .main-nav a {
@@ -137,28 +129,33 @@ select {
   }
   
   .dropdown-content {
-    display: none;
     position: absolute;
-    top: 100%;
+    /* top: 100%; */
     left: 0;
     background-color: #333;
     padding: 10px;
     min-width: 200px;
+    display: none;
   }
   
   .dropdown:hover .dropdown-content {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
   }
-  
   .category {
     flex-basis: calc(25% - 20px);
     margin: 10px;
-    text-align: center;
     display: flex;
     flex-direction: column; /* Alinear elementos verticalmente */
   }
-  
+
+  /* .img-category{
+    
+  } */
+  .img-category img{
+    width: 100px;
+    height: 100px;
+  }
   .category a {
     text-decoration: none;
     color: white;
